@@ -116,3 +116,10 @@ VALUES
 ('O010', 1, '2025-01-24', 'F010', 'R010', 9.75);
 
 # Start queries here 
+
+-- 1) name all of the restaurants and their states.
+
+select rest_name, rest_state
+      from restaurant;
+
+-- 2) display the name o
