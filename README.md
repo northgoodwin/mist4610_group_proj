@@ -63,37 +63,6 @@ completed_order: Tracks which menu items were included in each order.
 
 recipe_ingredients: Links ingredients to menu items.
 
-Usage
-
-You can use the database to perform various queries, such as:
-
-Retrieving cafe menu items:
-
-SELECT * FROM menu_items;
-
-Finding customer orders and corresponding employees:
-
-SELECT o.order_id, o.order_date, e.f_name, e.l_name 
-FROM orders o 
-JOIN employee e ON o.employee_id = e.employee_id;
-
-Checking inventory for low stock items:
-
-SELECT ingredient_name, ingredient_amount 
-FROM inventory 
-WHERE ingredient_amount < 10;
-
-Finding shift assignments for employees:
-
-SELECT s.shift_date, s.start_time, s.end_time, e.f_name, e.l_name 
-FROM shift_assignment sa 
-JOIN shifts s ON sa.shift_id = s.shift_id 
-JOIN employee e ON sa.employee_id = e.employee_id;
-
-Calculating total revenue from orders:
-
-SELECT SUM(total_amount) FROM orders;
-
 Contributors
 
 Group 5: North Goodwin, Eunsang Im, Gabriel Chaux, Calvin Liu and Kai Chung - MIST 4610
