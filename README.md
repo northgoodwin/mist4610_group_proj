@@ -96,6 +96,7 @@ Coffee shops represent a significant sector within this industry, serving millio
 ## Data Dictionary:
 
 <img width="118" alt="image" src="https://github.com/user-attachments/assets/84db3191-edb9-476c-89d2-0241d1569bcf" />
+
 <img width="434" alt="image" src="https://github.com/user-attachments/assets/3f0a6dfe-9887-4f4d-8e9e-b700f2f78217" />
 
 
