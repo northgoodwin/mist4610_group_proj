@@ -134,6 +134,16 @@ Coffee shops represent a significant sector within this industry, serving millio
 
 ## Queries:
 
+Query #1: Popular coffee/Popular food items (most sold) join two tables and find out the most sold.
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/f863ac7b-4cb7-4b3a-95ba-0d54dc55228b" />
+
+<img width="251" alt="image" src="https://github.com/user-attachments/assets/3540b6d8-98ad-4668-aa18-2a1701ddc2ae" />
+
+
+
+
+
 
 ## Database Information:
 
