@@ -28,7 +28,7 @@ Installation & Setup
 
 Clone this repository:
 
-git clone https://github.com/yourusername/mist4610_project1_group5.git
+git clone https://github.com/kaichung862/mist4610_project1_group5.git
 cd sql_project1
 
 Open your SQL database and create a new schema (if required).
