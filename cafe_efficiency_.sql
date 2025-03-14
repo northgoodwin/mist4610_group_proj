@@ -312,3 +312,134 @@ INSERT INTO recipe_ingredients (ingredient_id, item_id, recipe_id) VALUES
   (6, 8, 'R8');             -- Bagel: Flour
   
   use ha_group5_crn71552;
+
+# (query 1) - Total Ingredient Cost Per Item 
+select 
+    ingredient_name,
+    ingredient_amount as quantity_available,
+    ingredient_cost,
+    (ingredient_amount * ingredient_cost) as total_cost
+from inventory;
+
+# (query 2) - Calculate Total Inventory Cost 
+select 
+    sum(ingredient_amount * ingredient_cost) as total_inventory_cost
+from inventory;
+
+# (query 3) - Find Most Sold Menu Items 
+select 
+    menu_items.item_name, 
+    count(*) as total_sales
+from completed_order
+join menu_items on completed_order.item_id = menu_items.item_id
+group by menu_items.item_id, menu_items.item_name
+order by total_sales desc;
+
+# (query 4) - Find Suppliers Providing Most Essential Ingredients 
+select 
+    supplier.s_name as supplier, 
+    inventory.ingredient_name, 
+    count(distinct menu_items.item_id) as items_dependent
+from supplier
+join inventory on supplier.ingredient_id = inventory.ingredient_id
+join recipe_ingredients on inventory.ingredient_id = recipe_ingredients.ingredient_id
+join menu_items on recipe_ingredients.item_id = menu_items.item_id
+group by supplier.supplier_id, inventory.ingredient_id
+order by items_dependent desc;
+
+# (query 5) - Find Best Performing Shifts Based on Sales
+select 
+    shifts.shift_id, shifts.shift_date, 
+    shifts.start_time, shifts.end_time, 
+    sum(orders.total_amount) as total_sales
+from orders
+join employee on orders.employee_id = employee.employee_id
+join shift_assignment on employee.employee_id = shift_assignment.employee_id
+join shifts on shift_assignment.shift_id = shifts.shift_id
+group by shifts.shift_id, shifts.shift_date, shifts.start_time, shifts.end_time
+having total_sales > (
+    select avg(total_amount) 
+    from orders
+)
+order by total_sales desc;
+
+# (query 6) - Find Underperforming Menu Items 
+with item_order_counts as (
+    select 
+        menu_items.item_id, menu_items.item_name, menu_items.category, 
+        count(completed_order.item_id) as order_qty
+    from menu_items
+    join completed_order on completed_order.item_id = menu_items.item_id
+    group by menu_items.item_id, menu_items.item_name, menu_items.category
+)
+select ioc.item_name, ioc.category, ioc.order_qty
+from item_order_counts as ioc
+where ioc.order_qty < (
+    select avg(order_qty)
+    from item_order_counts as ioc2
+    where ioc2.category = ioc.category
+)
+order by ioc.order_qty desc;
+
+# (query 7) - Find Estimated Profits Per Menu Item 
+select 
+    menu_items.item_name,
+    menu_items.category,
+    count(completed_order.item_id) as times_sold,
+    count(completed_order.item_id) * menu_items.price as total_revenue,
+    count(completed_order.item_id) * (
+        menu_items.price - (
+            select sum(cast(inventory.ingredient_cost as decimal(10,2)))
+            from recipe_ingredients
+            join inventory on recipe_ingredients.ingredient_id = inventory.ingredient_id
+            where recipe_ingredients.item_id = menu_items.item_id
+        )
+    ) as estimated_profit
+from menu_items
+join completed_order on menu_items.item_id = completed_order.item_id
+group by menu_items.item_id, menu_items.item_name, menu_items.category, menu_items.price;
+
+# (query 8) - Find Supplier Profitability 
+select 
+    supplier.supplier_id,
+    supplier.s_name,
+    inventory.ingredient_name,
+    count(completed_order.item_id) as total_sales,
+    sum(menu_items.price) as total_revenue,
+    sum(menu_items.price - (count(completed_order.item_id) * cast(inventory.ingredient_cost as decimal(10,2)))) as estimated_profit
+from supplier
+join inventory on supplier.ingredient_id = inventory.ingredient_id
+join recipe_ingredients on inventory.ingredient_id = recipe_ingredients.ingredient_id
+join menu_items on recipe_ingredients.item_id = menu_items.item_id
+join completed_order on menu_items.item_id = completed_order.item_id
+group by supplier.supplier_id, supplier.s_name, inventory.ingredient_name;
+
+# (query 9) - Find Employees Working More Than Average Shifts 
+select 
+    employee.employee_id, f_name, l_name, 
+    count(*) as total_shifts
+from employee
+join shift_assignment on employee.employee_id = shift_assignment.employee_id
+group by employee.employee_id
+having total_shifts > (
+    select avg(total_shifts)
+    from (select count(*) as total_shifts from shift_assignment group by employee_id) as avg_shifts
+)
+order by total_shifts desc;
+
+# (query 10) - Find Most Profitable Menu Items and Their Suppliers 
+select 
+    supplier.s_name as supplier_name, 
+    menu_items.item_name as menu_item, 
+    (menu_items.price / inventory.ingredient_cost) as profit_ratio
+from supplier
+join inventory on supplier.ingredient_id = inventory.ingredient_id
+join recipe_ingredients on inventory.ingredient_id = recipe_ingredients.ingredient_id
+join menu_items on recipe_ingredients.item_id = menu_items.item_id
+where (menu_items.price / inventory.ingredient_cost) = (
+    select max(menu_items_sub.price / inventory_sub.ingredient_cost)
+    from menu_items as menu_items_sub
+    join recipe_ingredients as recipe_ingredients_sub 
+        on menu_items_sub.item_id = recipe_ingredients_sub.item_id
+    join inventory as inventory_sub 
+        on recipe_ingredients_sub.ingredient_id = inventory_sub.ingredient_id);
