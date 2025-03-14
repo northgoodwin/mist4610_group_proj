@@ -102,5 +102,5 @@ License
 
 This project is for educational purposes and follows an open-source license.
 
-Feel free to modify this README as needed!
+
 
