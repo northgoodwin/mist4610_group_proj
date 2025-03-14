@@ -89,8 +89,38 @@ Coffee shops represent a significant sector within this industry, serving millio
 
 ## Data Model:
 
+<img width="782" alt="image" src="https://github.com/user-attachments/assets/1773aa5b-7f62-4cce-9dbd-e9eee20e3de2" />
+
+
 
 ## Data Dictionary:
+
+<img width="118" alt="image" src="https://github.com/user-attachments/assets/84db3191-edb9-476c-89d2-0241d1569bcf" />
+<img width="434" alt="image" src="https://github.com/user-attachments/assets/3f0a6dfe-9887-4f4d-8e9e-b700f2f78217" />
+
+<img width="103" alt="image" src="https://github.com/user-attachments/assets/f2ba2f02-fe4d-4460-81bc-a774162d57d3" />
+<img width="408" alt="image" src="https://github.com/user-attachments/assets/611bffa1-c63d-4a90-b72d-0d3203ca586a" />
+
+<img width="107" alt="image" src="https://github.com/user-attachments/assets/4857343f-5080-4c67-b7f0-760be1762520" />
+<img width="402" alt="image" src="https://github.com/user-attachments/assets/9f1ba3d5-14ea-41ef-ad87-255bdfb5e7c4" />
+
+<img width="121" alt="image" src="https://github.com/user-attachments/assets/cfa89d8f-f642-4bb2-8c65-d16a0d983d82" />
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/513f74b8-9a6b-4c41-855f-5368f99dfec1" />
+
+<img width="106" alt="image" src="https://github.com/user-attachments/assets/60d0e30a-1c0b-48eb-8ed5-253f91ac6b04" />
+<img width="362" alt="image" src="https://github.com/user-attachments/assets/56f1b240-bcf8-473a-adf0-122907e657c3" />
+
+<img width="106" alt="image" src="https://github.com/user-attachments/assets/07789186-32a1-41f0-9df7-2f7dc05f59a5" />
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/f2818db0-6d24-42c6-9232-f6bb04b0d88e" />
+
+<img width="162" alt="image" src="https://github.com/user-attachments/assets/92d283c3-f023-487d-b9de-58c1a0254617" />
+<img width="418" alt="image" src="https://github.com/user-attachments/assets/9cc57976-b6fd-4736-812f-0e57dcf38e84" />
+
+<img width="162" alt="image" src="https://github.com/user-attachments/assets/1ff7afe3-46e5-4a17-aac1-923c04d2d1ec" />
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/4d2ce9f6-ad51-4181-b0eb-666ee8783f7d" />
+
+<img width="174" alt="image" src="https://github.com/user-attachments/assets/a4975091-24ad-4fb9-9451-ddd8ee323486" />
+<img width="406" alt="image" src="https://github.com/user-attachments/assets/14be1dca-969d-4995-82bb-872483f6e454" />
 
 
 ## Queries:
