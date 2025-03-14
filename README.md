@@ -103,13 +103,31 @@ License
 This project is for educational purposes and follows an open-source license.
 
 -------------------------------------------------------------------------------------------------
-# Scenario Description
 
+# MIST4610 Project_1 Group_5
+## Group Name and Members:
+71552 MIST4610
+1. Goodwin, North
+2. Im, Eunsang
+3. Chaux, Gabriel
+4. Liu, Calvin
+5. Chung, Kai
+
+# Scenario Description:
 We wanted to analyze the efficiency of coffee shops from both the customer experience and operational perspectives. The food industry contributes approximately 5.5% of the U.S. GDP, generating around $1.537 trillion annually. 
 
 Coffee shops represent a significant sector within this industry, serving millions of customers daily. Given their prominence, we sought to study their operations to identify strategies that optimize functionality, streamline processes, and improve overall performance.
 
+## Data Model:
 
+
+## Data Dictionary:
+
+
+## Queries:
+
+
+## Database Information:
 
 
 
