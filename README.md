@@ -1,4 +1,4 @@
-# cafe_efficiency_
+![image](https://github.com/user-attachments/assets/d87f2346-21a2-4c2b-8825-201eaf014e9a)# cafe_efficiency_
 SQL Project 1 - Cafe Efficiency Database
 
 Project Overview
@@ -101,6 +101,17 @@ Group 5: North Goodwin, Eunsang Im, Gabriel Chaux, Calvin Liu and Kai Chung - MI
 License
 
 This project is for educational purposes and follows an open-source license.
+
+-------------------------------------------------------------------------------------------------
+# Scenario Description
+
+We wanted to analyze the efficiency of coffee shops from both the customer experience and operational perspectives. The food industry contributes approximately 5.5% of the U.S. GDP, generating around $1.537 trillion annually. 
+
+Coffee shops represent a significant sector within this industry, serving millions of customers daily. Given their prominence, we sought to study their operations to identify strategies that optimize functionality, streamline processes, and improve overall performance.
+
+
+
+
 
 
 
