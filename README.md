@@ -88,7 +88,13 @@ We wanted to analyze the efficiency of coffee shops from both the customer exper
 Coffee shops represent a significant sector within this industry, serving millions of customers daily. Given their prominence, we sought to study their operations to identify strategies that optimize functionality, streamline processes, and improve overall performance.
 
 ## Data Model:
+This data model contains nine tables (supplier, inventory, recipe_ingredients, menu_items, completed_order, orders, employee, shift_assignment, and shifts) with the central tables being the menu_items table and the employee table. These two tables are the central point as they have the most bearing on the operational capacity of a cafe.
 
+The supplier table has a one-to-many relationship with the inventory table as the cafe's inventory can have many suppliers for various ingredients. The inventory table has a many-to-many relationship with the menu_items table with recipe_ingredients as the weak entity as a menu_item can use many inventory items and an inventory item can be in many recipes.
+
+The menu_items table also has a many-to-many relationship with the orders table with the completed_order tabe as the weak entity as a menu_item can be in many orders and an order can contain many menu_items. The employee table has a one-to-many relationship with orders as an employee can charge many orders, but an order can only be charged by one employee.
+
+Finally, the employee table has a many-to-many relationship with the shifts table with the shift_assignment table as the weak entity as an employee can have many shifts during the week, and a shift period can have many employees working in the cafe at the same time.
 <img width="782" alt="image" src="https://github.com/user-attachments/assets/1773aa5b-7f62-4cce-9dbd-e9eee20e3de2" />
 
 
@@ -180,7 +186,9 @@ This helps managers by highlighting which menu items are the most profitable, al
 ## Database Information:
 ![image](https://github.com/user-attachments/assets/928f4c20-a980-4bab-8aca-88f320e65b55)
 
+Database name: ha_group5_crn71552
 
+The diagram above shows the different criteria that each query matches. Each element dictates the complexity of the query. Each query can be called via CALL TP_Qx(); where X is the query number.
 
 
 
