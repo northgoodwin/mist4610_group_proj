@@ -65,7 +65,7 @@ recipe_ingredients: Links ingredients to menu items.
 
 Contributors
 
-Group 5: North Goodwin, Eunsang Im, Gabriel Chaux, Calvin Liu and Kai Chung - MIST 4610
+Group 5: North Goodwin, Eunsang Im, Gabriel Chaux, Calvin Liu, and Kai Chung - MIST 4610
 
 License
 
@@ -116,11 +116,46 @@ This information helps managers make informed decisions on inventory management,
 
 Query #2: 
 
-
 ![image](https://github.com/user-attachments/assets/9eb9b5f6-f9c0-4491-8c52-d3ea0fbec87f)
-
 ![image](https://github.com/user-attachments/assets/2b89e361-e858-4409-b8e9-0cbd9374425a)
 
+Query #3:
+
+![image](https://github.com/user-attachments/assets/4ebd8ad7-f1b8-4925-9ca8-8ab46c166e2c)
+![image](https://github.com/user-attachments/assets/61eb8eba-f50a-4c4f-89a1-d80ea43cf2a0)
+
+Query #4
+
+![image](https://github.com/user-attachments/assets/8823bc4b-48fb-4897-9db0-c63b87f20162)
+![image](https://github.com/user-attachments/assets/df6862b9-4ae8-4e99-ba51-231520daee31)
+
+Query #5
+
+![image](https://github.com/user-attachments/assets/56d9ff76-62da-43e7-a6fa-28c9fc61bb39)
+![image](https://github.com/user-attachments/assets/0ff80c2a-81a2-48fe-b838-3dd8ff491477)
+
+Query #6
+
+![image](https://github.com/user-attachments/assets/31273095-a605-45e0-8708-fb3f5f1abb56)
+![image](https://github.com/user-attachments/assets/dbf5773b-fd95-49da-b8e5-3f400f15ccf1)
+
+Query #7
+
+![image](https://github.com/user-attachments/assets/399cbe66-e8b1-42b6-9fd4-42c75dd753d8)
+
+Query #8
+
+![image](https://github.com/user-attachments/assets/7cecc7b3-2494-46a4-bd34-84ff92fca2c1)
+
+Query #9
+
+![image](https://github.com/user-attachments/assets/d34b2d10-7885-416a-bd72-ef05df1b4a6e)
+![image](https://github.com/user-attachments/assets/e252be4c-73b8-452c-bd4c-243039548563)
+
+Query #10
+
+![image](https://github.com/user-attachments/assets/52618315-d059-4122-8027-13ed491ee2e7)
+![image](https://github.com/user-attachments/assets/41a71431-fa28-4ff9-b1a6-4c9b80caa35e)
 
 
 ## Database Information:
