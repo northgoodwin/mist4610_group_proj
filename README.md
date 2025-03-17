@@ -107,19 +107,24 @@ Coffee shops represent a significant sector within this industry, serving millio
 
 ## Queries:
 
-Query #1: Shows the most popular coffee/popular food items (most sold).
+Query #1: Shows the most popular coffee/food items (most sold).
+
 This information helps managers make informed decisions on inventory management, menu adjustments, and promotional strategies to optimize sales and efficiency.
 
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/f863ac7b-4cb7-4b3a-95ba-0d54dc55228b" />
-
 <img width="251" alt="image" src="https://github.com/user-attachments/assets/3540b6d8-98ad-4668-aa18-2a1701ddc2ae" />
 
-Query #2: 
+Query #2: Breaks down inventory costs by showing ingredient names, available quantities, individual costs, and total costs based on quantity.
+
+A manager can utilize this information to monitor ingredient stock levels, ingredient costs, and optimize inventory management. This can aid in replenishing inventory in a timely manner, prevent overspending, and calculate margins.
+
 
 ![image](https://github.com/user-attachments/assets/9eb9b5f6-f9c0-4491-8c52-d3ea0fbec87f)
 ![image](https://github.com/user-attachments/assets/2b89e361-e858-4409-b8e9-0cbd9374425a)
 
-Query #3:
+Query #3: Calculates total inventory cost by summing the product of ingredient quantities and costs per unit.​
+
+
 
 ![image](https://github.com/user-attachments/assets/4ebd8ad7-f1b8-4925-9ca8-8ab46c166e2c)
 ![image](https://github.com/user-attachments/assets/61eb8eba-f50a-4c4f-89a1-d80ea43cf2a0)
