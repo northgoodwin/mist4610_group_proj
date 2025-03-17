@@ -124,31 +124,39 @@ A manager can utilize this information to monitor ingredient stock levels, ingre
 
 Query #3: Calculates total inventory cost by summing the product of ingredient quantities and costs per unit.​
 
-
+This query can help managers track total inventory costs, allowing them to see how much capital they have invested into inventory. This data can be used to adjust prices accordingly, improve budgeting, and streamline financial planning
 
 ![image](https://github.com/user-attachments/assets/4ebd8ad7-f1b8-4925-9ca8-8ab46c166e2c)
 ![image](https://github.com/user-attachments/assets/61eb8eba-f50a-4c4f-89a1-d80ea43cf2a0)
 
-Query #4
+Query #4: Finds which ingredients are used in the most recipes by returning the supplier, the ingredient name, and the number of times that the ingredient is used in a recipe.
+
+This data can be utilized to understand which suppliers are critical to the cafe's operations allowing managers to strengthen relationships with these suppliers. Managers can also use this information when introducing new menu items to not overuse ingredients that already have high usage and increase the usage of other less-utilized ingredients to reduce waste.
 
 ![image](https://github.com/user-attachments/assets/8823bc4b-48fb-4897-9db0-c63b87f20162)
 ![image](https://github.com/user-attachments/assets/df6862b9-4ae8-4e99-ba51-231520daee31)
 
-Query #5
+Query #5: Identifies what shifts have the greatest sale numbers by returning the shift date, time period, and total sales.
+
+This information is used by managers to see which time sections generate the most service revenue, allowing them to strategically assign workers to optimize cafe operations. This ensures that the cafe has enough labor to meet sales maximizing profit.
 
 ![image](https://github.com/user-attachments/assets/56d9ff76-62da-43e7-a6fa-28c9fc61bb39)
 ![image](https://github.com/user-attachments/assets/0ff80c2a-81a2-48fe-b838-3dd8ff491477)
 
-Query #6
+Query #6: Identifies which items underperform below average within their respective categories by showing the item, the category, and the order_qty.
+
+This query can be used by managers to see what menu items underperform which allows them to adjust inventory orders and menu prices accordingly to drive sales and appeal.  Managers can use this data to make data-driven decisions about menu changes, promotions, and resource allocation, maximizing profit.
 
 ![image](https://github.com/user-attachments/assets/31273095-a605-45e0-8708-fb3f5f1abb56)
 ![image](https://github.com/user-attachments/assets/dbf5773b-fd95-49da-b8e5-3f400f15ccf1)
 
-Query #7
+Query #7: Calculates each menu item's profit by summing its sales, computing total revenue, and then subtracting the combined ingredient costs.
+
+This information helps managers spot which items generate the most profit or to spot which items are loss leaders. This data can lead to price and menu changes, maximizing profit by eliminating bad products from the cafe.
 
 ![image](https://github.com/user-attachments/assets/399cbe66-e8b1-42b6-9fd4-42c75dd753d8)
 
-Query #8
+Query #8: 
 
 ![image](https://github.com/user-attachments/assets/7cecc7b3-2494-46a4-bd34-84ff92fca2c1)
 
