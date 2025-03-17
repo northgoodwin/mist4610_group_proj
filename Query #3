@@ -1,9 +1,0 @@
-SELECT s_name AS supplier, 
-       inventory.ingredient_name, 
-       COUNT(DISTINCT menu_items.item_id) AS items_dependent 
-FROM supplier  
-	JOIN inventory  ON supplier.ingredient_id = inventory.ingredient_id 
-	JOIN recipe_ingredients ON inventory.ingredient_id = recipe_ingredients.ingredient_id 
-	JOIN menu_items ON recipe_ingredients.item_id = menu_items.item_id 
-GROUP BY supplier.supplier_id, inventory.ingredient_id 
-ORDER BY items_dependent DESC;
