@@ -156,16 +156,22 @@ This information helps managers spot which items generate the most profit or to 
 
 ![image](https://github.com/user-attachments/assets/399cbe66-e8b1-42b6-9fd4-42c75dd753d8)
 
-Query #8: 
+Query #8: Calculates total sales and revenue for menu items containing a specific ingredient and estimates profit by subtracting total ingredient costs from revenue. Shows supplier ID, supplier name, ingredient name, total sales, total revenue, and estimated profit.
+
+This helps managers evaluate the profitability of menu items based on ingredient costs, identify high-margin and low-margin items, and assess supplier contributions to overall profit. This data can inform decisions on pricing, menu adjustments, and supplier negotiations.
 
 ![image](https://github.com/user-attachments/assets/7cecc7b3-2494-46a4-bd34-84ff92fca2c1)
 
-Query #9
+Query #9: Identifies employees who work the most shifts compared to the average number of shifts per employee. Returns the employee ID, employee name, and the total shifts they had.
+
+This helps managers reward high-performing employees with bonuses, identify overworked staff to prevent burnout and performance declines and optimize scheduling to balance workloads. Additionally, it can assist in reducing wage costs by minimizing unnecessary overtime pay and ensuring fair shift distribution.
 
 ![image](https://github.com/user-attachments/assets/d34b2d10-7885-416a-bd72-ef05df1b4a6e)
 ![image](https://github.com/user-attachments/assets/e252be4c-73b8-452c-bd4c-243039548563)
 
-Query #10
+Query #10: Identifies the supplier providing ingredients for the most profitable menu items. Returns the supplier name, menu item, and the profit ratio
+
+This helps managers by highlighting which menu items are the most profitable, allowing them to focus marketing efforts on high-margin products. It also helps identify which suppliers offer the best value, enabling more strategic supplier negotiations and cost management.
 
 ![image](https://github.com/user-attachments/assets/52618315-d059-4122-8027-13ed491ee2e7)
 ![image](https://github.com/user-attachments/assets/41a71431-fa28-4ff9-b1a6-4c9b80caa35e)
